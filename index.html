@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/basics.css">
+  <link rel="stylesheet" type="text/css" href="/css/owl.css">
+  <link rel="stylesheet" type="text/css" href="/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>Thai Tones Deducer</title>
+</head>
+
+<body>
+  <div class="container large questionnaire">
+    <div class="row app-title">Thai Tones Deducer</div>
+    <div class="questions-carousel carousel owl">
+      <div class="item row no-wrap question-1">
+        <div class="ordinal">1</div>
+        <div>
+          <div class="question">Which class does the <u>first</u> consonant of the word or syllable belong to?</div>
+          <ul>
+            <li>
+              <input type="radio" id="mid-class" name="class-group" value="mid-g">
+              <label for="mid-class">
+                <span class="title">Mid &rarr;</span>
+                <span>ก จ ฎ ฏ ด ต บ ป อ</span>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="high-class" name="class-group" value="high-g">
+              <label for="high-class">
+                <span class="title">High &rarr;</span>
+                <span>ข ฃ ฉ ฐ ถ ผ ฝ ศ ษ ส ห</span>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="low-class" name="class-group" value="low-g">
+              <label for="low-class">
+                <span class="title">Low &rarr;</span>
+                <span>ค ฅ ฆ ง ช ซ ฌ ญ ฑ ฒ ณ ท ธ น พ ฟ ภ ม ย ร ล ว ฬ ฮ</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item row no-wrap question-2">
+        <div class="ordinal">2</div>
+        <div>
+          <div class="question">Which tone mark do you see?</div>
+          <div class="tones-selection">
+            <input type="radio" id="ayk-tone-mark" name="tone-group" value="ayk-g">
+            <label for="ayk-tone-mark">่</label>
+            <input type="radio" id="dto-tone-mark" name="tone-group" value="dto-g">
+            <label for="dto-tone-mark">้</label>
+            <input type="radio" id="dtri-tone-mark" name="tone-group" value="dtri-g">
+            <label for="dtri-tone-mark">๊</label>
+            <input type="radio" id="jat-tone-mark" name="tone-group" value="jat-g">
+            <label for="jat-tone-mark">๋</label>
+            <input type="radio" id="no-tone-mark" name="tone-group" value="no-tone">
+            <label for="no-tone-mark" class="no-tone">No tone mark</label>
+          </div>
+        </div>
+      </div>
+      <div class="item row no-wrap question-3">
+        <div class="ordinal">3</div>
+        <div>
+          <div class="question">What is the <u>final</u> consonant of the word/syllable?</div>
+          <ul>
+            <li>
+              <input type="radio" id="open-final" name="final-group" value="open">
+              <label for="open-final">Open (no final consonant)</label>
+            </li>
+            <li>
+              <input type="radio" id="closed-live-final" name="final-group" value="closed-live">
+              <label for="closed-live-final">
+                <span class="title">Closed live &rarr;</span>
+                <span class="final-consonants">
+                  <span class="letter-en">n</span>
+                  <span class="characters">น ณ ญ ร ล ฬ</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">ng</span>
+                  <span class="characters">ง</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">m</span>
+                  <span class="characters">ม</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">y</span>
+                  <span class="characters">ย</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">w</span>
+                  <span class="characters">ว</span>
+                </span>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="closed-dead-final" name="final-group" value="closed-dead">
+              <label for="closed-dead-final">
+                <span class="title">Closed dead &rarr;</span>
+                <span class="final-consonants">
+                  <span class="letter-en">k</span>
+                  <span class="characters">ก ข ค ฆ</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">p</span>
+                  <span class="characters">ป พ ภ ฟ บ</span>
+                </span>
+                <span class="final-consonants">
+                  <span class="letter-en">t</span>
+                  <span class="characters">ต ฏ ถ ฐ ท ฒ ฑ ธ จ ช ฌ ส ศ ษ ด ฎ</span>
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item row no-wrap question-4">
+        <div class="ordinal">4</div>
+        <div>
+          <div class="question">Is the vowel short or long?</div>
+          <ul>
+            <li>
+              <input type="radio" id="short-vowel" name="vowel-group" value="short-g">
+              <label for="short-vowel">
+                <span class="title">Short &rarr;</span>
+                <div class="vowel">ั-</div>
+                <div class="vowel">-ะ</div>
+                <div class="vowel">แ ๊-</div>
+                <div class="vowel">แ-ะ</div>
+                <div class="vowel">๊อ-</div>
+                <div class="vowel">เ-าะ</div>
+                <div class="vowel">เ ๊-</div>
+                <div class="vowel">เ-ะ</div>
+                <div class="vowel">เิ-</div>
+                <div class="vowel">เ-อะ</div>
+                <div class="vowel">โ-ะ</div>
+                <div class="vowel"> ิ</div>
+                <div class="vowel">ึ</div>
+                <div class="vowel"> ุ</div>
+                <div class="vowel">เียะ</div>
+                <div class="vowel">เือะ</div>
+                <div class="vowel">ัวะ</div>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="long-vowel" name="vowel-group" value="long-g">
+              <label for="long-vowel">
+                <span class="title">Long &rarr;</span>
+                <div class="vowel">-า-</div>
+                <div class="vowel">-า</div>
+                <div class="vowel">แ-</div>
+                <div class="vowel">-อ-</div>
+                <div class="vowel">-อ</div>
+                <div class="vowel">เ-</div>
+                <div class="vowel">เิ-</div>
+                <div class="vowel">เ-อ</div>
+                <div class="vowel">โ-</div>
+                <div class="vowel"> ี</div>
+                <div class="vowel"> ื-</div>
+                <div class="vowel"> ือ</div>
+                <div class="vowel"> ู</div>
+                <div class="vowel">เีย</div>
+                <div class="vowel">เีย-</div>
+                <div class="vowel">เือ</div>
+                <div class="vowel">เือ-</div>
+                <div class="vowel">-ว-</div>
+                <div class="vowel">ัว</div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <div class="prev disabled">&#10094; Prev</div>
+      <div class="reset disabled">Reset</div>
+      <div class="next disabled">Next &#10095;</div>
+    </div>
+  </div>
+  <div class="container large">
+    <div class="tones-grid">
+      <div class="cell blank"></div>
+      <div class="cell title no-mark no-mark-g">No Tone Mark</div>
+      <div class="cell title live no-mark-g live-g long-g">Live</div>
+      <div class="cell title dead no-mark-g dead-g">Dead</div>
+      <div class="cell title short no-mark-g dead-g short-g">Short</div>
+      <div class="cell title long no-mark-g dead-g long-g">Long</div>
+      <div class="cell title mark mark-g">Tone Mark</div>
+      <div class="cell title ayk mark-g ayk-g">่</div>
+      <div class="cell title dto mark-g dto-g">้</div>
+      <div class="cell title dtri mark-g dtri-g">๊</div>
+      <div class="cell title jat mark-g jat-g">๋</div>
+      <div class="cell title mid-g mid-g-title">Mid</div>
+      <div class="cell mid-g mid-g-t1 no-mark-g long-g live-g tone-m">M</div>
+      <div class="cell mid-g mid-g-t2 no-mark-g dead-g tone-l">L</div>
+      <div class="cell mid-g mid-g-t3 mark-g ayk-g tone-l">L</div>
+      <div class="cell mid-g mid-g-t4 mark-g dto-g tone-f">F</div>
+      <div class="cell mid-g mid-g-t5 mark-g dtri-g tone-h">H</div>
+      <div class="cell mid-g mid-g-t6 mark-g jat-g tone-r">R</div>
+      <div class="cell title high-g high-g-title">High</div>
+      <div class="cell high-g high-g-t1 no-mark-g long-g live-g tone-r">R</div>
+      <div class="cell high-g high-g-t2 no-mark-g dead-g tone-l">L</div>
+      <div class="cell high-g high-g-t3 mark-g ayk-g tone-l">L</div>
+      <div class="cell high-g high-g-t4 mark-g dto-g tone-f">F</div>
+      <div class="cell title low-g low-g-title">Low</div>
+      <div class="cell low-g low-g-t1 no-mark-g long-g live-g tone-m">M</div>
+      <div class="cell low-g low-g-t2 no-mark-g dead-g short-g tone-h">H</div>
+      <div class="cell low-g low-g-t3 no-mark-g dead-g long-g tone-f">F</div>
+      <div class="cell low-g low-g-t4 mark-g ayk-g tone-f">F</div>
+      <div class="cell low-g low-g-t5 mark-g dto-g tone-h">H</div>
+      <div class="cell title legend">
+        <ul>
+          <li><b>M</b>iddle</li>
+          <li><b>L</b>ow</li>
+          <li><b>H</b>igh</li>
+          <li><b>F</b>alling</li>
+          <li><b>R</b>ising</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/thaitones.js"></script>
+</body>
+
+</html>
