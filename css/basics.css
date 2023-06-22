@@ -44,6 +44,7 @@ body {
   transition: background-color 0.3s var(--animation-base);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 2em 1em;
 }
 
 a {

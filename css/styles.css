@@ -10,8 +10,7 @@
 .questionnaire {
   position: relative;
   margin-top: 3rem;
-  margin-bottom: 2rem;
-  
+  margin-bottom: 2rem;  
 }
 
 .questionnaire .app-title {
@@ -19,6 +18,8 @@
   font-weight: 900;
   color: var(--black-color);
   font-family: 'Charm', Arial, sans-serif;
+  text-align: center;
+  line-height: 1;
 }
 
 .questionnaire .row {
