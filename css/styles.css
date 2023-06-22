@@ -71,7 +71,7 @@
   margin-right: 4px;
 }
 
-.tones-selection > label {
+.tones-selection > .tone-option {
   margin-right: 16px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .final-consonants {
-  padding-right: 12px;
+  padding-right: 12px;  
 }
 
 .final-consonants .letter-en {
